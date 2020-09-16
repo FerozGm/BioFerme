@@ -1,4 +1,8 @@
+
+@import "variables";
 $hauteur: 100px;
+
+h1{ color:$couleur;}
 #header {
  height: $hauteur;
 }

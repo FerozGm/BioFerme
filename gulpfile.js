@@ -9,12 +9,15 @@ function css(cb) {
  .pipe(sass().on('error', sass.logError))
  .pipe(dest('./dist/css'));
 };
-
+/*
 const ts = require("gulp-typescript");
 var tsProject = ts.createProject("tsconfig.json");
 gulp.task("default", function () {
  return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest("dist"));
-}); 
+}); */
+function copiehtml(cb) {
+  return src('./src/html/index.html')
+  .pipe(dest('./dist'));
+}
 
-
-exports.default = css
+exports.default = parallel(css, copiehtml)
