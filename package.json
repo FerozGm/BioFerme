@@ -18,10 +18,16 @@
   "homepage": "https://github.com/FerozGm/BioFerme#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-cli": "^2.3.0",
+    "gulp-gm": "0.0.9",
+    "gulp-include": "^2.4.1",
     "gulp-sass": "^4.1.0",
+    "gulp-svgmin": "^3.0.0",
+    "gulp-svgo": "^2.2.1",
     "gulp-typescript": "^6.0.0-alpha.1",
     "node-sass": "^4.14.1",
     "typescript": "^4.0.2"
-  }
+  },
+  "dependencies": {}
 }
